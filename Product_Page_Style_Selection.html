@@ -12,33 +12,104 @@
 
 <body>
   <style>
-    .style-row-container {
+  .style-row-container {
+  padding-top: 18px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #D9D9D9;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+}
 
-    }
+.style-row-container .style-price {
+  margin-top: 8px;
+}
 
-    .style-row-container .style-price {
+.style-row-container .style-plus-minus-group .btn-default {
+  color: #A1A1A1;
+  border: 1px solid #CBCBCB;
+  font-size: 12px;
+  padding: 6px 8px;
+}
 
-    }
+.style-row-container .style-plus-minus-group .form-control {
+  min-width: 30px;
+  height: auto;
+  border: 1px solid #CBCBCB;
+  font-size: 12px;
+  padding: 6px 10px;
+}
 
-    .style-row-container .style-plus-minus-group .btn-default {
-    }
+.style-row-container .style-in-stock {
+  color: #A1A1A1;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.styles-add-to-cart {
+  display: block;
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px 34px;
+  transition: .20s ease all;
+  letter-spacing: 4px;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  background: #A9D051;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.styles-add-to-cart:hover {
+  background: #b7e452;
+}
+
+.scroll-container {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 560px;
+  padding: 0 30px 0 15px;
+}
+
+.scroll-container::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+	background-color: #D9D9D9;
+}
+
+.scroll-container::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #fff;
+}
+
+.scroll-container::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #A1A1A1;
+}
   </style>
 
   <div class="container">
-    <div class="row">
+    <div class="row"><!-- product title -->
       <div class="col-xs-12">
         <h1>{{ PRODUCT TITLE }}</h1>
-      </div>
+      </div> <!-- product title ends -->
+      <!-- product images -->
       <div class="col-sm-6"><img class="img-responsive" src="images\bsfw-1319-quartz-crystal_larg.png" alt=""></div>
+      <!-- product images end -->
+      <!-- product style options -->
       <div class="col-sm-6">
+        <div class="scroll-container"> <!-- product style scroll -->
+        <!-- product style container -->
         <div class="style-row-container row">
-          <div class="col-xs-2" style="padding: 0 5px;"><img class="center-block img-responsive" src="images\bsfw-1319-quartz-crystal_larg.png" alt=""></div>
-          <div class="col-xs-6" ><strong>COLOR:</strong> Style Title here
+          <div class="col-xs-2" style="padding: 0;"><img class="center-block img-responsive" src="images\bsfw-1319-quartz-crystal_larg.png" alt=""></div>
+          <div class="col-xs-6" style="padding: 0 10px;"><strong>COLOR:</strong> 1314 Deep Velvet Rich Boysenberry Purple
             <div class="style-price"><strong>Price:</strong> $9.98</div>
           </div>
-          <div class="col-xs-4">
-              <label for="Quantity" class="quantity-selector">Quantity</label>
-
+          <div class="col-xs-4"><!-- product style quantity -->
+              <div class="text-right">Quantity:</div>
               <div class="input-group style-plus-minus-group">
                 <span class="input-group-btn">
                   <button class="btn btn-default" type="button" id="btn-plus"><span class="glyphicon glyphicon-minus"></span></button>
@@ -48,11 +119,97 @@
                   <button class="btn btn-default" type="button" id="btn-minus"><span class="glyphicon glyphicon-plus"></span></button>
                 </span>
               </div>
-              <div class="style-in-stock text-right">37 in stock.</div>
-
+              <div class="style-in-stock text-right">37 in stock.</div> <!-- product style quantity ends -->
+          </div>
+        </div><!-- product style container ends -->
+        <!-- product style container -->
+        <div class="style-row-container row">
+          <div class="col-xs-2" style="padding: 0;"><img class="center-block img-responsive" src="images\bsfw-1319-quartz-crystal_larg.png" alt=""></div>
+          <div class="col-xs-6"  style="padding: 0 10px;"><strong>COLOR:</strong> Style Title here
+            <div class="style-price"><strong>Price:</strong> $9.98</div>
+          </div>
+          <div class="col-xs-4"><!-- product style quantity -->
+              <div class="text-right">Quantity:</div>
+              <div class="input-group style-plus-minus-group">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button" id="btn-plus"><span class="glyphicon glyphicon-minus"></span></button>
+                </span>
+                <input type="text" class="form-control" name="qty" id="qty" value="1">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button" id="btn-minus"><span class="glyphicon glyphicon-plus"></span></button>
+                </span>
+              </div>
+              <div class="style-in-stock text-right">37 in stock.</div> <!-- product style quantity ends -->
+          </div>
+        </div><!-- product style container ends -->
+        <!-- product style container -->
+        <div class="style-row-container row">
+          <div class="col-xs-2" style="padding: 0;"><img class="center-block img-responsive" src="images\bsfw-1319-quartz-crystal_larg.png" alt=""></div>
+          <div class="col-xs-6"  style="padding: 0 10px;"><strong>COLOR:</strong> Style Title here
+            <div class="style-price"><strong>Price:</strong> $9.98</div>
+          </div>
+          <div class="col-xs-4"><!-- product style quantity -->
+              <div class="text-right">Quantity:</div>
+              <div class="input-group style-plus-minus-group">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button" id="btn-plus"><span class="glyphicon glyphicon-minus"></span></button>
+                </span>
+                <input type="text" class="form-control" name="qty" id="qty" value="1">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button" id="btn-minus"><span class="glyphicon glyphicon-plus"></span></button>
+                </span>
+              </div>
+              <div class="style-in-stock text-right">37 in stock.</div> <!-- product style quantity ends -->
+          </div>
+        </div><!-- product style container ends -->
+        <!-- product style container -->
+        <div class="style-row-container row">
+          <div class="col-xs-2" style="padding: 0;"><img class="center-block img-responsive" src="images\bsfw-1319-quartz-crystal_larg.png" alt=""></div>
+          <div class="col-xs-6"  style="padding: 0 10px;"><strong>COLOR:</strong> Style Title here
+            <div class="style-price"><strong>Price:</strong> $9.98</div>
+          </div>
+          <div class="col-xs-4"><!-- product style quantity -->
+              <div class="text-right">Quantity:</div>
+              <div class="input-group style-plus-minus-group">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button" id="btn-plus"><span class="glyphicon glyphicon-minus"></span></button>
+                </span>
+                <input type="text" class="form-control" name="qty" id="qty" value="1">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button" id="btn-minus"><span class="glyphicon glyphicon-plus"></span></button>
+                </span>
+              </div>
+              <div class="style-in-stock text-right">37 in stock.</div> <!-- product style quantity ends -->
+          </div>
+        </div><!-- product style container ends -->
+        <!-- product style container -->
+        <div class="style-row-container row">
+          <div class="col-xs-2" style="padding: 0;"><img class="center-block img-responsive" src="images\bsfw-1319-quartz-crystal_larg.png" alt=""></div>
+          <div class="col-xs-6"  style="padding: 0 10px;"><strong>COLOR:</strong> Style Title here
+            <div class="style-price"><strong>Price:</strong> $9.98</div>
+          </div>
+          <div class="col-xs-4"><!-- product style quantity -->
+              <div class="text-right">Quantity:</div>
+              <div class="input-group style-plus-minus-group">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button" id="btn-plus"><span class="glyphicon glyphicon-minus"></span></button>
+                </span>
+                <input type="text" class="form-control" name="qty" id="qty" value="1">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button" id="btn-minus"><span class="glyphicon glyphicon-plus"></span></button>
+                </span>
+              </div>
+              <div class="style-in-stock text-right">37 in stock.</div> <!-- product style quantity ends -->
+          </div>
+        </div><!-- product style container ends -->
+      </div><!-- product style scroll ends -->
+        <div class="row">
+          <div class="col-xs-12">
+            <button class="styles-add-to-cart">ADD TO CART</button>
           </div>
         </div>
-      </div>
+      </div><!-- product style options ends -->
+
     </div>
   </div>
 
